@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>EL GRANER · Carta de Cafès & Infusions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#68452c;
+  --accent:#D6A46A;
+  --bg:#f5f3f0;
+  --text:#2d2420;
+  --card-bg:#fffefa;
+  --shadow:0 6px 32px rgba(104,69,44,0.10);
+  --highlight:#e9d9c7;
+  --special:#e8b651;
+}
+body{
+  font-family:'Source Sans Pro',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  margin:0;
+  padding:0;
+}
+.header{
+  padding:42px 0 14px 0;
+  text-align:center;
+  background:linear-gradient(0deg,var(--bg),#f7ecd8 80%);
+  box-shadow:0 1px 0 #ebdcc6;
+}
+.logo{
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  font-family:'Montserrat',sans-serif;
+  font-weight:700;
+  font-size:40px;
+  color:var(--primary);
+  letter-spacing:1.2px;
+  margin-bottom:6px;
+}
+.logo-ico{
+  width:42px;height:42px;
+  background:var(--accent);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:29px;
+  box-shadow:0 2px 10px rgba(214,164,106,0.20);
+}
+.slogan{font-style:italic;font-size:17px;color:#997b60;margin:0 0 7px 0;}
+.location{color:#886744;font-size:16px;letter-spacing:0.3px;margin-bottom:14px;}
+.manifest{
+  background:var(--highlight);
+  margin:34px auto 20px auto;
+  padding:20px 36px;
+  border-radius:17px;
+  font-size:17px;
+  max-width:560px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+.qr{
+  display:flex;justify-content:center;margin:18px 0 0 0;
+}
+.menu-title{
+  text-align:center;
+  font-family:'Montserrat',sans-serif;
+  font-size:28px;
+  color:var(--primary);
+  margin:36px 0 17px 0;
+  letter-spacing:0.5px;
+}
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:28px;
+  max-width:1100px;
+  margin:0 auto 0 auto;
+  padding:0 16px 12px 16px;
+}
+.card{
+  background:var(--card-bg);
+  border-radius:21px;
+  box-shadow:var(--shadow);
+  padding:30px 24px 18px 24px;
+  position:relative;
+  display:flex;flex-direction:column;
+  min-height:270px;
+  margin-bottom:8px;
+}
+.card.special{
+  border:2.5px solid var(--special);
+  box-shadow:0 10px 36px rgba(232,182,81,0.12), var(--shadow);
+}
+.card .reco{
+  position:absolute;top:17px;right:17px;
+  background:var(--special);
+  color:#fff;
+  font-weight:bold;
+  font-size:14px;
+  border-radius:8px;
+  padding:3px 12px;
+  box-shadow:0 2px 8px #e8b6513d;
+  letter-spacing:1px;
+}
+.card h3{
+  font-family:'Montserrat',sans-serif;
+  font-size:21px;
+  font-weight:700;
+  margin:0 0 7px 0;
+  color:var(--primary);
+  letter-spacing:0.1px;
+}
+.price{
+  font-size:19px;font-weight:600;color:var(--accent);margin-bottom:7px;margin-top:-2px;}
+.desc{font-size:16px;margin-bottom:17px;}
+.alls{
+  margin-top:auto;font-size:17px;display:flex;gap:10px;color:#8b6b46;
+  align-items:center;
+}
+.alls .ico{font-size:20px}
+.alls .text{font-size:15px;color:#8b6b46}
+.alls .ico-cafeina{color:#6d4e36}
+.alls .ico-fruits{color:#b38867}
+.legend{
+  display:flex;justify-content:center;align-items:center;gap:18px;margin:22px 0 0 0;flex-wrap:wrap;font-size:16px;color:#7a6a57;}
+.legend .lg-ico{margin-right:4px;font-size:20px;}
+.legend span{display:flex;align-items:center;gap:2px;}
+.options{
+  text-align:center;font-size:14.7px;color:#b8a693;margin-top:4px;margin-bottom:28px;}
+footer{
+  text-align:center;
+  margin:38px 0 12px 0;
+  font-size:14px;
+  color:#95806a;
+}
+@media(max-width:600px){
+  .logo{font-size:28px;}
+  .logo-ico{width:32px;height:32px;font-size:19px;}
+  .header{padding:22px 0 10px 0;}
+  .manifest{padding:13px 6px;font-size:15px;}
+  .menu-title{font-size:20px;}
+  .card{padding:16px 10px;}
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <span class="logo-ico">&#127793;</span> EL GRANER
+    </div>
+    <div class="slogan">Coffee & Craft Drinks</div>
+    <div class="location">Carrer del Salze 27 · Barri Vell, Girona</div>
+  </div>
+  <div class="manifest">
+    Al Graner, el cafè és cultura i experiència. Seleccionem cada gra pensant en el teu moment de pausa, inspiració o trobada.<br>
+    T’oferim receptes úniques, saludables i amb producte local.<br>
+    <b>Descobreix el teu ritual de cafè.</b>
+  </div>
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=110x110&data=https://www.instagram.com/elgraner.cafe" alt="QR Instagram El Graner" width="110" height="110" style="border-radius:16px;box-shadow:0 1px 8px #ebdcc6">
+  </div>
+  <div class="menu-title">CAFÈS &amp; INFUSIONS</div>
+  <div class="menu-grid">
+    <div class="card special">
+      <div class="reco">Barista’s Pick</div>
+      <h3>Flat White “Ametller Florejat”</h3>
+      <div class="price">3,80&nbsp;€</div>
+      <div class="desc">Doble espresso + llet d’ametlla barista; escuma setinosa i fil de mel d’espígol del Baix Empordà. Dolçor natural, textura cremosa i aroma floral.</div>
+      <div class="alls"><span class="ico ico-cafeina">&#9749;</span> <span class="ico ico-fruits">&#127792;</span> <span class="text">Cafeïna · Fruits secs</span></div>
+    </div>
+    <div class="card">
+      <h3>Ristretto “Volcànic”</h3>
+      <div class="price">2,30&nbsp;€</div>
+      <div class="desc">Aràbica single-origin de Chiapas torrat mitjà-alt; notes de cacau 80 % i fusta de cedre. Servit curt per potenciar l’aroma.</div>
+      <div class="alls"><span class="ico ico-cafeina">&#9749;</span> <span class="text">Cafeïna</span></div>
+    </div>
+    <div class="card">
+      <h3>Cappuccino “Núvol de Coco”</h3>
+      <div class="price">3,90&nbsp;€</div>
+      <div class="desc">Espresso aràbica + beguda de coco ecològica; topping de cacau cru i flocs de coco torrat. Cremós i dolç sense sucre afegit.</div>
+      <div class="alls"><span class="ico ico-cafeina">&#9749;</span> <span class="text">Cafeïna</span></div>
+    </div>
+    <div class="card">
+      <h3>Cold Brew “Tarongina”</h3>
+      <div class="price">3,40&nbsp;€</div>
+      <div class="desc">18 h d’extracció en fred amb pela de taronja bio; servit amb gel esfèric i twist de llima. Refresc cítric baix en acidesa.</div>
+      <div class="alls"><span class="ico ico-cafeina">&#9749;</span> <span class="text">Cafeïna</span></div>
+    </div>
+    <div class="card">
+      <h3>Rooibos “Valls de Foc”</h3>
+      <div class="price">3,10&nbsp;€</div>
+      <div class="desc">Rooibos vermell, daus de mango i bitxo dolç. 0 mg de cafeïna; doç-picant equilibrat. Ritual sense teïna.</div>
+      <div class="alls"><span class="text">—</span></div>
+    </div>
+  </div>
+  <div class="legend">
+    <span><span class="lg-ico">&#129371;</span> Gluten</span>
+    <span><span class="lg-ico">&#129371;</span> Lactosa</span>
+    <span><span class="lg-ico">&#127792;</span> Fruits secs</span>
+    <span><span class="lg-ico">&#127863;</span> Sulfits</span>
+    <span><span class="lg-ico">&#9749;</span> Cafeïna</span>
+  </div>
+  <div class="options">
+    Preus amb IVA inclòs · Opcions descafeïnades i llets vegetals sense cost extra · Segueix-nos a <b>@elgraner.cafe</b>
+  </div>
+  <footer>
+    © 2025 EL GRANER · Disseny i carta creativa
+  </footer>
+</body>
+</html>
